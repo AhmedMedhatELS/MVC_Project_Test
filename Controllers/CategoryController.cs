@@ -19,8 +19,8 @@ namespace Project1.Controllers
             return View();
         }
 
-
-        public IActionResult SaveAddCategory(Category category)
+        [HttpPost]
+        public IActionResult AddCategory(Category category)
         {
             context.Categories.Add(category);
             context.SaveChanges();
@@ -34,7 +34,8 @@ namespace Project1.Controllers
             return View(model: category);
         }
 
-        public IActionResult SaveEdit(Category category)
+        [HttpPost]
+        public IActionResult Edit(Category category)
         {
             context.Categories.Update(category);
             context.SaveChanges();
