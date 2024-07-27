@@ -1,0 +1,25 @@
+﻿@model Product
+
+<form action="SavePhone">
+    <div class="mb-3">
+        <label for="phoneName" class="form-label">Phone Name</label>
+        <input type="text" name="Name" class="form-control" id="phoneName" required>
+    </div>
+    <div class="mb-3">
+        <label for="phoneDescription" class="form-label">Phone Description</label>
+        <input type="text" name="Description" class="form-control" id="phoneDescription" required>
+    </div>
+    <div class="mb-3">
+        <label for="phonePrice " class="form-label">Phone Price</label>
+        <input type="number" name="Price" class="form-control" id="phonePrice" required>
+    </div>
+    <div class="mb-3">
+        <label for="phoneimg" class="form-label">Phone img</label>
+        <input type="text" name="img" class="form-control" id="phoneimg" required>
+    </div>
+    <div class="mb-3">
+        <label for="phoneCategoryId" class="form-label">Phone CategoryId</label>
+        <input type="number" name="CategoryId" class="form-control" id="phoneCategoryId" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
